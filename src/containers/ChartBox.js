@@ -1,6 +1,6 @@
 import React from 'react';
 import ChartList from '../components/ChartList.js'
-import '../components/ChartItem.css';
+import '../index.css';
 
 class ChartBox extends React.Component {
   constructor (props) {
@@ -20,7 +20,10 @@ class ChartBox extends React.Component {
 
   render() {
     return (
-      <ChartList chart={this.state.chart}/>
+      <div id="chart-box">
+        <h1 id="page-heading">iTunes Top 20 Chart</h1>
+        <ChartList chart={this.state.chart}/>
+      </div>
     )
   }
 

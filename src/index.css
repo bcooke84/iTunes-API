@@ -1,5 +1,62 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1#page-heading {
+  display: flex;
+  justify-content: left;
+  padding-left: 120px;
+  padding-top: 20px;
+
+}
+
+.chart-list {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.chart-item {
+  padding: 15px;
+  margin: 5px;
+  text-align: left;
+  display: inline-block;
+  width: 200px;
+  word-break: normal;
+  flex-grow: 1;
+}
+
+div.zoom{
+  transition:all 0.3s ease-out;
+}
+
+div.zoom:hover {
+  transform:scale(1.15);
+}
+
+a.link {
+  text-decoration: none;
+}
+
+a, p {
+  color: black;
+}
+
+.artist-name {
+  font-weight: bold;
+}
+
+.release-date {
+  color: grey;
+}
+
+.release-date-paragraph {
+  font-size: 10px;
 }
