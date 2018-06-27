@@ -7,7 +7,7 @@ class ChartBox extends React.Component {
     super(props);
     this.state = {
       chart: []
-      
+
     }
   }
 
@@ -22,7 +22,10 @@ class ChartBox extends React.Component {
   render() {
     return (
       <div id="chart-box">
-        <h1 id="page-heading">iTunes Top 20 Chart</h1>
+        <div id="header">
+          <img id="logo" src={require("./iTunesLogo.png")} alt="iTunes logo"/>
+          <h1 id="page-heading">Top 20 Chart</h1>
+        </div>
         <ChartList chart={this.state.chart}/>
       </div>
     )
