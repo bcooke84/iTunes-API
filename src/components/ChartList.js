@@ -9,7 +9,11 @@ const ChartList = (props) => {
   })
 
   return (
-    <div className='chart-list'>{chartListItems}</div>
+    <div className='chart-list'>
+      {chartListItems}
+      <audio id="audio" hidden="true"></audio>
+    </div>
+
   )
 }
 
